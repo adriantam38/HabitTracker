@@ -1,50 +1,100 @@
-# Welcome to your Expo app 👋
+# 📅 Habit Tracker App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile habit tracking app built with **React Native**, **Expo**, **Appwrite**, and **NativeWind (TailwindCSS)**. This project was built as a personal milestone to deepen my understanding of full-stack mobile development.
 
-## Get started
+---
 
-1. Install dependencies
+## 📋 Table of Contents
 
-   ```bash
-   npm install
-   ```
+- [About the Project](#about-the-project)
+- [Tech Stack](#tech-stack)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Environment Variables](#environment-variables)
+- [Acknowledgements](#acknowledgements)
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🚀 About the Project
 
-In the output, you'll find options to open the app in a
+This is a personal milestone project — a fully functional **Habit Tracker** mobile app where users can create habits, mark them as complete, track their streaks, and manage their account. It uses Appwrite as a real-time backend and Expo to run on both iOS and Android.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## ⚙️ Tech Stack
 
-## Get a fresh project
+| Technology                                              | Purpose                            |
+| ------------------------------------------------------- | ---------------------------------- |
+| [React Native](https://reactnative.dev/)                | Cross-platform mobile UI           |
+| [Expo](https://expo.dev/)                               | Dev tooling & build platform       |
+| [Appwrite](https://appwrite.io/)                        | Backend, auth & real-time database |
+| [NativeWind / TailwindCSS](https://www.nativewind.dev/) | Utility-first styling              |
+| [TypeScript](https://www.typescriptlang.org/)           | Type safety                        |
+| React Hooks                                             | State & side-effect management     |
 
-When you're ready, run:
+---
+
+## ✨ Features
+
+- 🏅 **Habit Streaks** — Visualise your daily streaks in real time
+- ✅ **Add / Complete / Delete Habits** — Full CRUD habit management
+- 🔄 **Real-Time Sync** — Data synced live via Appwrite
+- 🌑 **Dark Mode** — Sleek dark UI powered by TailwindCSS
+- 📱 **Responsive Design** — Mobile-first layout via Expo
+- 🔐 **User Authentication** — Sign up, sign in, and session management with Appwrite Auth
+
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+- An [Appwrite](https://appwrite.io/) account and project
+
+### Installation
 
 ```bash
-npm run reset-project
+# Clone the repository
+git clone https://github.com/yourusername/habit-tracker-react-native.git
+
+# Navigate into the project directory
+cd habit-tracker-react-native
+
+# Install dependencies
+npm install
+
+# Start the development server
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Scan the QR code with the **Expo Go** app on your phone, or press `i` / `a` to open in an iOS or Android simulator.
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🔑 Environment Variables
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Create a `.env` file in the root of your project and add your Appwrite credentials:
 
-## Join the community
+```env
+EXPO_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=your_project_id
+EXPO_PUBLIC_APPWRITE_DATABASE_ID=your_database_id
+EXPO_PUBLIC_APPWRITE_HABITS_COLLECTION_ID=your_habits_collection_id
+EXPO_PUBLIC_APPWRITE_COMPLETIONS_COLLECTION_ID=your_completions_collection_id
+```
 
-Join our community of developers creating universal apps.
+> ⚠️ Never commit your `.env` file. Make sure it's listed in `.gitignore`.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+## 🙏 Acknowledgements
+
+- Tutorial by [JavaScript Mastery](https://www.youtube.com/@javascriptmastery) on YouTube
+- [Appwrite Documentation](https://appwrite.io/docs)
+- [Expo Documentation](https://docs.expo.dev/)
+- [React Native Documentation](https://reactnative.dev/docs/getting-started)
+- [NativeWind Documentation](https://www.nativewind.dev/)
