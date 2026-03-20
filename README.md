@@ -93,7 +93,7 @@ EXPO_PUBLIC_APPWRITE_COMPLETIONS_COLLECTION_ID=your_completions_collection_id
 
 ## 🙏 Acknowledgements
 
-- Tutorial by [JavaScript Mastery](https://www.youtube.com/@javascriptmastery) on YouTube
+- Tutorial by [Pedro Tech](https://www.youtube.com/@PedroTechnologies) on YouTube
 - [Appwrite Documentation](https://appwrite.io/docs)
 - [Expo Documentation](https://docs.expo.dev/)
 - [React Native Documentation](https://reactnative.dev/docs/getting-started)
